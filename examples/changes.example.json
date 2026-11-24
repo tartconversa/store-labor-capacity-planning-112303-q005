@@ -1,0 +1,44 @@
+{
+  "notes": [
+    "示例变更文件，供 python -m store_labor_capacity_planning revise 使用。",
+    "顺序执行；accepted 班次不能被删除，activity 变更只重算未确认时段。"
+  ],
+  "changes": [
+    {
+      "kind": "assign",
+      "store_id": "ST-006",
+      "date": "2026-12-05",
+      "role": "service",
+      "start_hour": 12,
+      "end_hour": 16,
+      "employee_id": "EMP-005"
+    },
+    {
+      "kind": "acceptance",
+      "shift_id": "BAL-0001",
+      "state": "accepted",
+      "actor": "employee"
+    },
+    {
+      "kind": "activity",
+      "activity": {
+        "activity_id": "ACT-LATE-01",
+        "store_id": "ST-003",
+        "date": "2026-12-05",
+        "kind": "closure",
+        "start_hour": 12,
+        "end_hour": 16,
+        "note": "迟到通知：临时闭店检修"
+      },
+      "dates": [
+        "2026-12-01",
+        "2026-12-02",
+        "2026-12-03",
+        "2026-12-04",
+        "2026-12-05",
+        "2026-12-06",
+        "2026-12-07"
+      ]
+    }
+  ]
+}

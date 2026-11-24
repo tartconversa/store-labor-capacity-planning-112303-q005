@@ -1,0 +1,7 @@
+﻿activity_id,store_id,date,kind,start_hour,end_hour,uplift,note
+ACT-P01,ST-003,2026-12-05,promotion,10,14,0.25,周末促销
+ACT-P02,ST-007,2026-12-06,promotion,14,18,0.3,会员日
+ACT-P03,ST-012,2026-12-12,promotion,9,13,0.2,新品试吃
+ACT-P04,ST-016,2026-12-13,promotion,15,19,0.35,节日预热
+ACT-C01,ST-005,2026-12-08,closure,8,12,,冷链设备检修
+ACT-C02,ST-014,2026-12-17,closure,16,20,,消防检查

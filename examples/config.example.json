@@ -1,0 +1,21 @@
+{
+  "standards": {
+    "transactions_per_register_hour": 40.0,
+    "customers_per_service_hour": 110.0,
+    "service_wait_target_minutes": 6.0
+  },
+  "constraints": {
+    "rest_hours_between_shifts": 11,
+    "max_consecutive_days": 5,
+    "max_shift_hours": 10,
+    "min_shift_hours": 2,
+    "allow_cross_store": false
+  },
+  "cost": {
+    "region_rates": {"R-S": 32.0, "R-W": 30.0, "R-N": 31.0},
+    "overtime_multiplier": 1.5
+  },
+  "scheduler": {
+    "min_coverage_target": 0.9
+  }
+}
